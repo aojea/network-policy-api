@@ -7,13 +7,34 @@
 
 (1-2 sentence summary of the proposal)
 
-## Goals
+## User-Stories/Use-Cases
 
-(Primary goals of this proposal.)
+(What new user-stories/use-cases does this proposal introduce?)
+
+A user story should typically have a summary structured this way:
+
+1. **As a** [user concerned by the story]
+2. **I want** [goal of the story]
+3. **so that** [reason for the story]
+
+The “so that” part is optional if more details are provided in the description.
+A story can also be supplemented with examples, diagrams, or additional notes.
+
+e.g
+
+Story 1: Deny traffic at a cluster level
+
+As a cluster admin, I want to apply non-overridable deny rules to certain pod(s)
+and(or) Namespace(s) that isolate the selected resources from all other cluster
+internal traffic.
+
+For Example: The admin wishes to protect a sensitive namespace by applying an
+AdminNetworkPolicy which denies ingress from all other in-cluster resources
+for all ports and protocols.
 
 ## Non-Goals
 
-(What is out of scope for this proposal.)
+(What is explicitly out of scope for this proposal.)
 
 ## Introduction
 
